@@ -1,0 +1,27 @@
+{
+  "name": "hw3",
+  "version": "1.0.0",
+  "description": "API for delivery service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha ./tests/*.test.js"
+  },
+  "author": "Sergey Yashchuk",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.2.1",
+    "mongoose": "^5.10.11"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.13.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemailer": "^6.4.16",
+    "supertest": "^6.0.1"
+  }
+}

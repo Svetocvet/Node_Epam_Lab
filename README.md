@@ -1,6 +1,6 @@
 Delivery Service Api
 
-**Summary** 
+## Summary
 
 This project is api witch provides delivery service created with express and mongoDB. There are 2 type of users(drivers and shippers) who can create loads and deliver them.
 

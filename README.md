@@ -30,7 +30,7 @@ $ npm start
 Full API documentation is in api_doc.yaml file which was provided by Swagger.  
 
 ## Tests
-There are tests provided by mocha and supertest, which can be ran by command below: 
+There are tests provided by mocha and supertest, which can be run by command below: 
 ```
 $ npm test
 ```

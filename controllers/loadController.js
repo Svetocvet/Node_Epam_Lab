@@ -183,11 +183,11 @@ module.exports.deleteLoad = async (req, res) => {
         if (load.created_by != req.user._id) {
             return res.status(400).json({message: 'You have no access to this Load'});
         }
-        if (load.status === 'SHIPPED' || load.status === 'NEW') {
+        if (load.status === 'NEW') {
             await Load.findByIdAndDelete({_id: req.params.id});
             return res.json({message: 'Load deleted successfully'});
         } else {
-            return res.status(400).json({message: 'This load is in process'});
+            return res.status(400).json({message: 'You cant delete this load, invalid status'});
         }
     } catch (err) {
         return res.status(500).json({message: `Couldn't delete Load`});
